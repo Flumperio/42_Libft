@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 12:47:12 by juasanto          #+#    #+#             */
-/*   Updated: 2020/07/14 11:53:26 by juasanto         ###   ########.fr       */
+/*   Updated: 2020/12/17 10:39:43 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	ft_strlen(const char *str)
 {
-	int cont;
+	int cnt;
 
-	cont = 0;
+	cnt = 0;
 	while (*str++ != 0)
-		cont++;
-	return (cont);
+		cnt++;
+	return (cnt);
 }

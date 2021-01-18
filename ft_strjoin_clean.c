@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strjoin_clean.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jcsantos <jcsantos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/30 12:18:01 by juasanto          #+#    #+#             */
-/*   Updated: 2020/08/25 13:23:03 by juasanto         ###   ########.fr       */
+/*   Created: 2020/12/23 11:02:42 by juasanto          #+#    #+#             */
+/*   Updated: 2021/01/15 11:34:46 by jcsantos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_bzero(void *bzero_string, unsigned int num_char)
+char		*ft_strjoin_clean(char *s1, char *s2, int clean)
 {
-	unsigned char *temp_pointer;
+	char *tmp;
 
-	temp_pointer = (unsigned char *)bzero_string;
-	while (num_char-- > 0)
-		*temp_pointer++ = 0;
-	return (bzero_string);
+	tmp = NULL;
+	tmp = ft_strjoin(s1, s2);
+	if (clean == 1)
+		free(s1);
+	else if (clean == 2)
+		free(s2);
+	if (clean == 3)
+	{
+		free(s1);
+		free(s2);
+	}
+	return (tmp);
 }

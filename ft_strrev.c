@@ -1,40 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_strrev.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/14 11:59:50 by juasanto          #+#    #+#             */
-/*   Updated: 2020/12/28 11:45:44 by juasanto         ###   ########.fr       */
+/*   Created: 2020/12/29 10:57:03 by juasanto          #+#    #+#             */
+/*   Updated: 2020/12/29 10:59:56 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strrev(char *str)
 {
-	char	*str;
-	size_t	cnt;
+	int		cnt;
+	int		length;
+	char	buff;
 
 	cnt = 0;
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
-	str = ft_calloc(sizeof(*s1), (ft_strlen(s1) + ft_strlen(s2)) + 1);
-	if (!str)
-		return (NULL);
-	while (*s1)
+	length = ft_strlen(str);
+	while (length - 1 > cnt)
 	{
-		str[cnt] = *s1;
+		buff = str[cnt];
+		str[cnt] = str[length - 1];
+		str[length - 1] = buff;
+		length--;
 		cnt++;
-		s1++;
 	}
-	while (*s2)
-	{
-		str[cnt] = *s2;
-		cnt++;
-		s2++;
-	}
-	str[cnt] = 0;
 	return (str);
 }

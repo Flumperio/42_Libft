@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 13:14:48 by juasanto          #+#    #+#             */
-/*   Updated: 2020/07/31 11:11:20 by juasanto         ###   ########.fr       */
+/*   Updated: 2020/12/29 10:58:24 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,12 +53,14 @@ char				*ft_strtrim(char const *s1, char const *set);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlcpy(char *dst, const char *src, size_t size);
 char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_strjoin_clean(char *s1, char *s2, int clean);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int					ft_strncmp(const char *str1, const char *str2, size_t n);
 char				*ft_strnstr(const char *str1, const char *str2, size_t len);
 char				*ft_strdup(const char *str);
 int					ft_strlen(const char *str);
 char				*ft_strrchr(const char *src, int chr);
+char				*ft_strrev(char *str);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 int					ft_tolower(int chr);
 int					ft_toupper(int chr);

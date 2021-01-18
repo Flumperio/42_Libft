@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 12:26:18 by juasanto          #+#    #+#             */
-/*   Updated: 2020/07/14 12:50:17 by juasanto         ###   ########.fr       */
+/*   Updated: 2020/12/17 12:27:40 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char				*ft_itoa(int n)
 	nb = (n < 0 ? -n : n);
 	len = ft_nblen(nb);
 	i = 0;
-	if (!(dest = (char *)malloc(sizeof(char) * len + 1 + (n < 0 ? 1 : 0))))
+	if (!(dest = (ft_calloc(sizeof(char), len + 1 + (n < 0 ? 1 : 0)))))
 		return (NULL);
 	if (n < 0)
 	{
