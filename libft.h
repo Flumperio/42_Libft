@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
+/*   By: juasanto <juasanto@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 13:14:48 by juasanto          #+#    #+#             */
-/*   Updated: 2020/12/29 10:58:24 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/02/15 18:21:20 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ size_t				ft_strlcpy(char *dst, const char *src, size_t size);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strjoin_clean(char *s1, char *s2, int clean);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+int					ft_strcmp(char *s1, char *s2);
 int					ft_strncmp(const char *str1, const char *str2, size_t n);
 char				*ft_strnstr(const char *str1, const char *str2, size_t len);
 char				*ft_strdup(const char *str);
