@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 13:14:48 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 13:48:19 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/02/22 13:35:57 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,5 +90,6 @@ void				*ft_memccpy(void *str_ds, const void *str_src, \
 int ser_c, size_t num_c);
 void				*ft_memmove(void *str_ds, const void *str_src, \
 size_t num_c);
+int					get_next_line(int fd, char **line);
 
 #endif
