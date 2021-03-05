@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/05 13:44:19 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 13:46:46 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:48:14 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_strdel(char **string)
 	}
 }
 
-int		ft_add(char **read_fd, int fd, char **line)
+int	ft_add(char **read_fd, int fd, char **line)
 {
 	int		count;
 	char	*tmp1;
@@ -36,7 +36,7 @@ int		ft_add(char **read_fd, int fd, char **line)
 	return (1);
 }
 
-int		fn_return(char **line, int fd, char **read_fd, ssize_t bytes_read)
+int	fn_return(char **line, int fd, char **read_fd, ssize_t bytes_read)
 {
 	if (bytes_read < 0)
 		return (-1);
@@ -56,7 +56,7 @@ int		fn_return(char **line, int fd, char **read_fd, ssize_t bytes_read)
 	}
 }
 
-int		get_next_line(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
 	char		*buffer;
 	ssize_t		bytes_read;

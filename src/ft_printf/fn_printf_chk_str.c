@@ -6,15 +6,15 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/08 13:16:32 by jcsantos          #+#    #+#             */
-/*   Updated: 2021/02/18 12:48:39 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:26:17 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
-int		check_flags1(t_parms *prn)
+int	check_flags1(t_parms *prn)
 {
-	int cnt1;
+	int	cnt1;
 
 	cnt1 = -1;
 	while (prn->flags_type[++cnt1] != 0)
@@ -39,9 +39,9 @@ int		check_flags1(t_parms *prn)
 	return (0);
 }
 
-int		check_flags2(t_parms *prn)
+int	check_flags2(t_parms *prn)
 {
-	int cnt1;
+	int	cnt1;
 
 	cnt1 = -1;
 	while (prn->flags_type[++cnt1] != 0)
@@ -61,7 +61,7 @@ int		check_flags2(t_parms *prn)
 	return (0);
 }
 
-int		check_parms(char *stc, char *current, t_parms *prn)
+int	check_parms(char *stc, char *current, t_parms *prn)
 {
 	int		cnt1;
 
@@ -78,7 +78,7 @@ int		check_parms(char *stc, char *current, t_parms *prn)
 	return (0);
 }
 
-int		check_num(int *current, t_parms *prn)
+int	check_num(int *current, t_parms *prn)
 {
 	*current = 0;
 	if (prn->string[prn->cnt] == '*')
@@ -89,7 +89,7 @@ int		check_num(int *current, t_parms *prn)
 	}
 	else if (prn->string[prn->cnt] >= '0' && prn->string[prn->cnt] <= '9')
 	{
-		while (prn->string[prn->cnt] && prn->string[prn->cnt] >= '0' &&
+		while (prn->string[prn->cnt] && prn->string[prn->cnt] >= '0' && \
 				prn->string[prn->cnt] <= '9')
 		{
 			*current *= 10;
@@ -101,7 +101,7 @@ int		check_num(int *current, t_parms *prn)
 		return (0);
 }
 
-int		check_format(t_parms *prn)
+int	check_format(t_parms *prn)
 {
 	int		cnt1;
 

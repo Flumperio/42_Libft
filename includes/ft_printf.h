@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/05 11:18:05 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:42:26 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:22:15 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 # define INT_MAX	+2147483647
 # define INT_MIN	-2147483648
 
-typedef struct	s_parms
+typedef struct s_parms
 {
 	va_list		args;
 	char		*args_temp;
@@ -67,9 +67,9 @@ void			fn_print_s(t_parms *prn);
 void			fn_printx(t_parms *prn);
 void			fn_print_chk_s(t_parms *prn);
 char			*fn_print_chk_iud(t_parms *prn, char *temp, int int_temp,
-				long long int uint_temp);
+					long long int uint_temp);
 char			*fn_print_chk_xp(t_parms *prn, char *temp,
-								long long int uint_temp);
+					long long int uint_temp);
 void			fn_print_chk_c(t_parms *prn);
 int				check_flags1(t_parms *prn);
 int				check_flags2(t_parms *prn);

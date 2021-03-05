@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/12 13:02:27 by jcsantos          #+#    #+#             */
-/*   Updated: 2021/02/18 12:28:56 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:47:34 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strrchr(const char *src, int chr)
 {
-	char *temp_pnt;
+	char	*temp_pnt;
 
 	temp_pnt = 0;
 	while (*src != 0)

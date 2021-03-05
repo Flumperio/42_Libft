@@ -6,13 +6,13 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 12:26:18 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:29:31 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:35:45 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-static int			ft_nblen(unsigned int n)
+static int	ft_nblen(unsigned int n)
 {
 	unsigned int	i;
 
@@ -25,7 +25,7 @@ static int			ft_nblen(unsigned int n)
 	return (i + 1);
 }
 
-char				*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char			*dest;
 	unsigned int	len;

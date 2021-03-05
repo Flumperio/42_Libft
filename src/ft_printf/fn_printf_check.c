@@ -6,13 +6,13 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 12:40:53 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:48:31 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:25:28 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
-int		fn_check_print(t_parms *prn)
+int	fn_check_print(t_parms *prn)
 {
 	char			*temp;
 	int				int_temp;
@@ -23,10 +23,10 @@ int		fn_check_print(t_parms *prn)
 	uint_temp = 0;
 	if (prn->cf == 's')
 		fn_print_chk_s(prn);
-	else if (prn->cf == 'i' || prn->cf == 'd' ||
+	else if (prn->cf == 'i' || prn->cf == 'd' || \
 			prn->cf == 'u' || prn->cf == 'U')
 		temp = fn_print_chk_iud(prn, temp, int_temp, uint_temp);
-	else if (prn->cf == 'x' || prn->cf == 'X' ||
+	else if (prn->cf == 'x' || prn->cf == 'X' || \
 			prn->cf == 'p')
 		temp = fn_print_chk_xp(prn, temp, uint_temp);
 	else if (prn->cf == 'c' || prn->cf == '%')
@@ -42,7 +42,7 @@ void	reset_neg(t_parms *prn)
 	return ;
 }
 
-int		fn_read(t_parms *prn, int tmp_prn_cnt)
+int	fn_read(t_parms *prn, int tmp_prn_cnt)
 {
 	while ((check_format(prn) == 0))
 	{
@@ -67,7 +67,7 @@ int		fn_read(t_parms *prn, int tmp_prn_cnt)
 	return (1);
 }
 
-int		fn_analisys(t_parms *prn)
+int	fn_analisys(t_parms *prn)
 {
 	while (prn->string[prn->cnt] != '\0')
 	{

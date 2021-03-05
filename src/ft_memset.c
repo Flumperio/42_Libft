@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 12:17:25 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:29:22 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:44:55 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, unsigned int n)
 {
-	unsigned char *temp_pointer;
+	unsigned char	*temp_pointer;
 
 	temp_pointer = (unsigned char *)s;
 	while (n-- > 0)

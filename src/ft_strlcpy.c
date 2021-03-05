@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 17:22:44 by jcsantos          #+#    #+#             */
-/*   Updated: 2021/02/18 12:29:07 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:46:47 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	int cnt;
-	int src_len;
+	int	cnt;
+	int	src_len;
 
 	cnt = 0;
 	if (src == NULL)

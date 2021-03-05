@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 13:14:48 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/22 13:35:57 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:22:48 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 #  define BUFFER_SIZE 2
 # endif
 
-typedef struct		s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
@@ -84,8 +84,8 @@ void				print_header(char *funcion_name, char *test_name);
 void				*ft_memset(void *memset_string, int fill_char, \
 unsigned int num_char);
 void				*ft_bzero(void *bzero_string, unsigned int num_char);
-void				*ft_memcpy(void *string_dest, const void *string_src,\
-size_t string_leng);
+void				*ft_memcpy(void *string_dest, const void *string_src, \
+						size_t string_leng);
 void				*ft_memccpy(void *str_ds, const void *str_src, \
 int ser_c, size_t num_c);
 void				*ft_memmove(void *str_ds, const void *str_src, \

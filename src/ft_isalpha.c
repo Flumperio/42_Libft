@@ -6,13 +6,13 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 11:22:42 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:29:38 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:34:09 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int		ft_isalpha(int chr)
+int	ft_isalpha(int chr)
 {
 	return (ft_islower(chr) || ft_isupper(chr));
 }

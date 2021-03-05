@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/18 12:27:46 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:29:12 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:45:55 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_strcmp(char *s1, char *s2)
 {
-	int cont;
-	int strcmp;
+	int	cont;
+	int	strcmp;
 
 	cont = 0;
 	strcmp = 0;

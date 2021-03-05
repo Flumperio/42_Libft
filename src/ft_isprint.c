@@ -6,13 +6,13 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 11:22:42 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:29:34 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/05 13:34:33 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int		ft_isprint(int chr)
+int	ft_isprint(int chr)
 {
 	return (chr >= 32 && chr <= 126);
 }
