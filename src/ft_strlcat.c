@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 17:22:44 by jcsantos          #+#    #+#             */
-/*   Updated: 2021/03/05 13:46:41 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/02/18 12:29:08 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	int	dst_len;
-	int	src_len;
-	int	cnt;
+	int dst_len;
+	int src_len;
+	int cnt;
 
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen((char *)src);

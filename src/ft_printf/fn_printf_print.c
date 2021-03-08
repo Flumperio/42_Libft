@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 10:09:47 by juasanto          #+#    #+#             */
-/*   Updated: 2021/03/05 13:26:43 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/02/18 12:48:51 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	fn_print_chk_s(t_parms *prn)
 {
-	if (prn->flag_p == 0 && prn->c_pre > 0 && \
+	if (prn->flag_p == 0 && prn->c_pre > 0 &&
 		prn->flag_w <= 0)
 	{
 		prn->args_temp = "";

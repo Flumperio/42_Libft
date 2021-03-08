@@ -6,13 +6,13 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 12:24:46 by juasanto          #+#    #+#             */
-/*   Updated: 2021/03/05 13:32:05 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/02/18 12:49:05 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
-int	fn_write(const char *str, int len, t_parms *prn)
+int			fn_write(const char *str, int len, t_parms *prn)
 {
 	if (str == NULL || len < 1)
 		return (1);
@@ -34,7 +34,7 @@ static int	ft_nblen_u(unsigned int n)
 	return (i + 1);
 }
 
-char	*ft_itoa_u(unsigned int n)
+char		*ft_itoa_u(unsigned int n)
 {
 	char			*dest;
 	unsigned int	len;
@@ -63,7 +63,7 @@ char	*ft_itoa_u(unsigned int n)
 	return (dest);
 }
 
-char	*fn_dectohex(long long int n, int capital, int j)
+char		*fn_dectohex(long long int n, int capital, int j)
 {
 	char				*converted;
 	unsigned long int	quotient;

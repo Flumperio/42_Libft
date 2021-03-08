@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 12:47:12 by juasanto          #+#    #+#             */
-/*   Updated: 2021/03/05 13:47:21 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/02/18 12:29:03 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	strncmp = 0;
 	if (n == 0)
 		return (0);
-	while ((str1[cont] == str2[cont]) && \
-		str1[cont] && str2[cont] && (cont < n - 1))
+	while ((str1[cont] == str2[cont]) \
+		&& str1[cont] && str2[cont] && (cont < n - 1))
 		cont++;
 	strncmp = ((unsigned char)str1[cont]) - ((unsigned char)str2[cont]);
 	return (strncmp);

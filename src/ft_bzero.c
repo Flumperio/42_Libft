@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 12:18:01 by juasanto          #+#    #+#             */
-/*   Updated: 2021/03/05 13:33:53 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/02/18 12:29:40 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_bzero(void *bzero_string, unsigned int num_char)
 {
-	unsigned char	*temp_pointer;
+	unsigned char *temp_pointer;
 
 	temp_pointer = (unsigned char *)bzero_string;
 	while (num_char-- > 0)

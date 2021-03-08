@@ -6,13 +6,13 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/12 17:03:47 by jcsantos          #+#    #+#             */
-/*   Updated: 2021/03/05 13:26:34 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/02/18 12:48:45 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
-void	fill_str(int cnt, int ab, char *fill, t_parms *prn)
+void		fill_str(int cnt, int ab, char *fill, t_parms *prn)
 {
 	char	*temp;
 
@@ -38,7 +38,7 @@ void	fill_str(int cnt, int ab, char *fill, t_parms *prn)
 	return ;
 }
 
-void	fill_sign(t_parms *prn)
+void		fill_sign(t_parms *prn)
 {
 	char	*temp;
 
@@ -56,7 +56,7 @@ void	fill_sign(t_parms *prn)
 	return ;
 }
 
-void	fill_0x(t_parms *prn)
+void		fill_0x(t_parms *prn)
 {
 	if (prn->cf == 'p' || prn->cf == 'x')
 		prn->ps = ft_strjoin_clean("0x", prn->ps, 2);

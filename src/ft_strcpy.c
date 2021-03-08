@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 12:15:53 by juasanto          #+#    #+#             */
-/*   Updated: 2021/03/05 13:46:07 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/02/18 12:29:11 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strcpy(char *string_dest, const char *string_src)
 {
-	int	counter;
+	int counter;
 
 	counter = 0;
 	while (string_src[counter])
