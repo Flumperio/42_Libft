@@ -6,13 +6,13 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 11:22:42 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:29:39 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/08 13:09:03 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int		ft_isalnum(int chr)
+int	ft_isalnum(int chr)
 {
 	return (ft_isalpha(chr) || ft_isdigit(chr));
 }

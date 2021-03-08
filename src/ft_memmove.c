@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 09:58:48 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:29:23 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/08 13:10:49 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memmove(void *str_ds, const void *str_src, size_t num_c)
 		cnt = (int)num_c - 1;
 		while (cnt >= 0)
 		{
-			*(char*)(str_ds + cnt) = *(char*)(str_src + cnt);
+			*(char *)(str_ds + cnt) = *(char *)(str_src + cnt);
 			cnt--;
 		}
 	}
@@ -32,7 +32,7 @@ void	*ft_memmove(void *str_ds, const void *str_src, size_t num_c)
 		cnt = 0;
 		while (cnt < (int)num_c)
 		{
-			*(char*)(str_ds + cnt) = *(char*)(str_src + cnt);
+			*(char *)(str_ds + cnt) = *(char *)(str_src + cnt);
 			cnt++;
 		}
 	}

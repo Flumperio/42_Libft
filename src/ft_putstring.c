@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 12:16:25 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:29:15 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/08 13:11:20 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstring(char *putstring)
 {
-	int countprint;
+	int	countprint;
 
 	countprint = 0;
 	while (putstring[countprint] != 0)

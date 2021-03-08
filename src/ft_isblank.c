@@ -6,13 +6,13 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 11:22:42 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:29:37 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/08 13:09:19 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int		ft_isblank(int chr)
+int	ft_isblank(int chr)
 {
 	return (chr == '\t' || chr == ' ');
 }

@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/23 09:12:23 by juasanto          #+#    #+#             */
-/*   Updated: 2021/03/08 11:25:52 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/08 13:11:39 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static	int	count_word(char const *str, char chr)
 	return (cnt);
 }
 
-char		**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	int		split_num;
 	char	**split_array;
@@ -46,7 +46,6 @@ char		**ft_split(char const *s, char c)
 	if (!s || !c)
 		return (NULL);
 	split_num = count_word(s, c);
-	//if (!(split_array = (char **)malloc((sizeof(char *)) * split_num + 1)))
 	if (!(split_array = (char **)ft_calloc(sizeof(char *), split_num + 1)))
 		return (NULL);
 	while (++cnt_array < split_num)

@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 16:59:03 by jcsantos          #+#    #+#             */
-/*   Updated: 2021/02/18 12:28:56 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/08 13:13:01 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 {
-	int size_str2;
+	int	size_str2;
 
 	if (*str2 == '\0')
 		return ((char *)str1);
