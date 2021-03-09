@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+         #
+#    By: jcsantos <jcsantos@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/08 11:39:06 by juasanto          #+#    #+#              #
-#    Updated: 2021/02/18 13:46:04 by juasanto         ###   ########.fr        #
+#    Updated: 2021/03/09 16:19:38 by jcsantos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRCS = ft_putchar.c ft_putnbr.c ft_putstring.c ft_strcpy.c \
 		ft_strrchr.c ft_memchr.c ft_memcmp.c ft_strnstr.c ft_calloc.c ft_atoi.c \
 		ft_substr.c ft_strjoin.c ft_itoa.c ft_putchar_fd.c ft_putnbr_fd.c ft_putendl_fd.c \
 		ft_putstr_fd.c ft_strmapi.c ft_split.c ft_strtrim.c ft_strjoin_clean.c ft_strrev.c \
-		ft_msgerror.c \
+		ft_msgerror.c ft_free.c ft_free_array.c \
 		get_next_line.c
 BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstiter.c
 SOURCES = $(addprefix $(LIBDIR), $(SRCS))
