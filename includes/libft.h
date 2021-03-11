@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcsantos <jcsantos@student.42.fr>          +#+  +:+       +#+        */
+/*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 13:14:48 by juasanto          #+#    #+#             */
-/*   Updated: 2021/03/09 16:20:12 by jcsantos         ###   ########.fr       */
+/*   Updated: 2021/03/11 10:56:33 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 # include <string.h>
 # include <fcntl.h>
 # include <time.h>
-# include "../includes/ft_printf.h"
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 2
@@ -91,7 +90,5 @@ int ser_c, size_t num_c);
 void				*ft_memmove(void *str_ds, const void *str_src, \
 size_t num_c);
 int					get_next_line(int fd, char **line);
-void				ft_free(char *str);
-void				ft_free_array(char **str);
 
 #endif

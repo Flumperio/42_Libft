@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/18 10:44:47 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:41:17 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/11 11:40:02 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_msgerror(char *str, int errno)
 {
-	ft_printf("Error\n%s\n", str);
+	printf("Error\n%s\n", str);
 	exit(errno);
 }
