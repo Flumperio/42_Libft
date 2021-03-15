@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/23 09:12:23 by juasanto          #+#    #+#             */
-/*   Updated: 2021/03/08 13:11:39 by juasanto         ###   ########.fr       */
+/*   Updated: 2021/03/15 11:41:06 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,26 @@ static	int	count_word(char const *str, char chr)
 	return (cnt);
 }
 
+int	cnt_pnt_yes (int *cnt_pnt, const char *s, char c)
+{
+	int	cnt_tmp;
+
+	cnt_tmp = *cnt_pnt;
+	while (s[cnt_tmp] == c && s[cnt_tmp] != 0)
+		cnt_tmp++;
+	return (cnt_tmp);
+}
+
+int	cnt_pnt_no (int *cnt_pnt, const char *s, char c)
+{
+	int	cnt_tmp;
+
+	cnt_tmp = *cnt_pnt;
+	while (s[cnt_tmp] != c && s[cnt_tmp] != 0)
+		cnt_tmp++;
+	return (cnt_tmp);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	int		split_num;
@@ -46,15 +66,14 @@ char	**ft_split(char const *s, char c)
 	if (!s || !c)
 		return (NULL);
 	split_num = count_word(s, c);
-	if (!(split_array = (char **)ft_calloc(sizeof(char *), split_num + 1)))
+	split_array = (char **)ft_calloc(sizeof(char *), split_num + 1);
+	if (!split_array)
 		return (NULL);
 	while (++cnt_array < split_num)
 	{
-		while (s[cnt_pnt] == c && s[cnt_pnt] != 0)
-			cnt_pnt++;
+		cnt_pnt = cnt_pnt_yes(&cnt_pnt, s, c);
 		start = cnt_pnt;
-		while (s[cnt_pnt] != c && s[cnt_pnt] != 0)
-			cnt_pnt++;
+		cnt_pnt = cnt_pnt_no(&cnt_pnt, s, c);
 		split_array[cnt_array] = ft_substr(s, start, cnt_pnt - start);
 		cnt_pnt++;
 	}
