@@ -20,7 +20,7 @@ char	*ft_strjoin_clean(char *s1, char *s2, int clean)
 	tmp = ft_strjoin(s1, s2);
 	if (clean == 1 || clean == 3)
 		free(s1);
-	else if (clean == 2 || clean == 3)
+	if (clean == 2 || clean == 3)
 		free(s2);
 	return (tmp);
 }
