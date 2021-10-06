@@ -31,7 +31,7 @@ typedef struct s_list
 	struct s_list	*next;
 }				t_list;
 
-unsigned long long int	ft_atoi(const char *str);
+long long int		ft_atoi(const char *str);
 void					*ft_calloc(size_t num, size_t size);
 int						ft_islower(int chr);
 int						ft_isupper(int chr);
