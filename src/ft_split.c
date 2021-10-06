@@ -33,7 +33,7 @@ static	int	count_word(char const *str, char chr)
 	return (cnt);
 }
 
-int	cnt_pnt_yes (int *cnt_pnt, const char *s, char c)
+int	cnt_pnt_yes(int *cnt_pnt, const char *s, char c)
 {
 	int	cnt_tmp;
 
@@ -43,7 +43,7 @@ int	cnt_pnt_yes (int *cnt_pnt, const char *s, char c)
 	return (cnt_tmp);
 }
 
-int	cnt_pnt_no (int *cnt_pnt, const char *s, char c)
+int	cnt_pnt_no(int *cnt_pnt, const char *s, char c)
 {
 	int	cnt_tmp;
 

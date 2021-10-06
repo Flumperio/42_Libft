@@ -29,9 +29,9 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}					t_list;
+}				t_list;
 
-int					ft_atoi(const char *str);
+long int			ft_atoi(const char *str);
 void				*ft_calloc(size_t num, size_t size);
 int					ft_islower(int chr);
 int					ft_isupper(int chr);
@@ -81,14 +81,14 @@ void				ft_putstring(char *putstring);
 char				*ft_strcpy(char *string_dest, const char *string_src);
 void				print_header(char *funcion_name, char *test_name);
 void				*ft_memset(void *memset_string, int fill_char, \
-unsigned int num_char);
+						unsigned int num_char);
 void				*ft_bzero(void *bzero_string, unsigned int num_char);
 void				*ft_memcpy(void *string_dest, const void *string_src, \
 						size_t string_leng);
 void				*ft_memccpy(void *str_ds, const void *str_src, \
-int ser_c, size_t num_c);
+						int ser_c, size_t num_c);
 void				*ft_memmove(void *str_ds, const void *str_src, \
-size_t num_c);
+						size_t num_c);
 int					get_next_line(int fd, char **line);
 void				ft_free_array(char **str);
 void				ft_free(char *str);

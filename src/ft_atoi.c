@@ -12,7 +12,7 @@
 
 #include "../includes/libft.h"
 
-int	ft_atoi(const char *str)
+long int	ft_atoi(const char *str)
 {
 	int						sign;
 	unsigned long long int	result;
