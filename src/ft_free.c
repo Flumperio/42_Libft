@@ -14,9 +14,6 @@
 
 void	ft_free(char *str)
 {
-	int	cnt;
-
-	cnt = 0;
 	if (!str)
 		return ;
 	free(str);
