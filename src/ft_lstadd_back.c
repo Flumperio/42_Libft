@@ -6,13 +6,13 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/31 10:42:08 by juasanto          #+#    #+#             */
-/*   Updated: 2021/02/18 12:29:31 by juasanto         ###   ########.fr       */
+/*   Updated: 2022/04/13 12:03:50 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new_l)
 {
 	t_list	*last;
 
