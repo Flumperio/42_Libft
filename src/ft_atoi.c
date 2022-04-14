@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 19:08:02 by jcsantos          #+#    #+#             */
-/*   Updated: 2021/03/08 12:36:12 by juasanto         ###   ########.fr       */
+/*   Updated: 2022/04/14 11:28:37 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 long long int	ft_atoi(const char *str)
 {
 	int						sign;
-	long long int	result;
+	long long int			result;
 
 	result = 0;
 	sign = 0;

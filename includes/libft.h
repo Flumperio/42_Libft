@@ -6,7 +6,7 @@
 /*   By: juasanto <juasanto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 13:14:48 by juasanto          #+#    #+#             */
-/*   Updated: 2022/04/13 12:03:08 by juasanto         ###   ########.fr       */
+/*   Updated: 2022/04/14 11:22:40 by juasanto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # include <string.h>
 # include <fcntl.h>
 # include <time.h>
+# include <unistd.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 2
